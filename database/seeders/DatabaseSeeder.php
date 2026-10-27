@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
         ]);
         $this->call(MatakuliahSeeder::class);
         $this->call(ProdiSeeder::class);
+        $this->call(PeriodeSeeder::class);
     }
 }
