@@ -6,18 +6,23 @@ use App\Models\Matakuliah;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index');
+    return view('dashboard');
 });
 
 Route::get('/coba', function () {
     return view('coba');
 });
 
+
 // Route::get('/matakuliah', function () {
 //     return view('matakuliah.index');
 // });
 
 // Route::get('/matakuliah', [MatakuliahController::class, 'index']);
+Route::view('/tables', 'tables')->name('tables');
+Route::view('/edit', 'edit')->name('edit');
+Route::view('/datatables', 'datatables')->name('datatables');
+
 Route::resource('matakuliah', MatakuliahController::class);
 Route::get('report',[MatakuliahController::class, 'report'])->name('matakuliah.report');
 
