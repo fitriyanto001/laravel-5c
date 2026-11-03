@@ -318,12 +318,12 @@
                     <!--begin::Row-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <h1 class="mb-0 fs-3">Dashboard</h1>
+                            <h1 class="mb-0 fs-3">DataTables</h1>
                         </div>
                         <div class="col-sm-6">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb float-sm-end">
-                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                    <li class="breadcrumb-item active" aria-current="page">DataTables</li>
                                 </ol>
                             </nav>
                         </div>
@@ -694,9 +694,9 @@
                 paginationSizeSelector: [10, 25, 50, 100],
                 movableColumns: true,
                 columns: [{
-                        title: '#',
+                        title: 'No',
                         field: 'id',
-                        width: 60,
+                        width: 70,
                         headerSort: true
                     },
                     {
